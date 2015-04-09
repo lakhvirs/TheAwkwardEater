@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Awkward Eater</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_recipes">SearchRecipesActivity</string>
+    <string name="title_activity_submit_recipes">SubmitRecipesActivity</string>
+    <string name="title_activity_fact_file">FactFileActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_intolerance_fact_file">IntoleranceFactFile</string>
+    <string name="title_activity_allergy_fact_file">AllergyFactFile</string>
+    <string name="title_activity_diet_fact_file">DietFactFile</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_recipe_main_page">RecipeMainPage</string>
+    <string name="title_activity_submit_review">SubmitReviewActivity</string>
+    <string name="title_activity_get_cooking">GetCookingActivity</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="title_activity_recipe_slide_page_fragment">RecipeSlidePageFragment</string>
+    <string name="title_activity_recipe_screen_slide_pager">RecipeScreenSlidePagerActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_screen_slide">ScreenSlideActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_all_reviews">AllReviewsActivity</string>
+
+</resources>

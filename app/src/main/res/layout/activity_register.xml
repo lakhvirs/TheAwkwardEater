@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+            <EditText android:id="@+id/reg_fullname"
+                android:layout_width="fill_parent"
+                android:hint="Enter full name"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:singleLine="true"/>
+
+            <EditText android:id="@+id/reg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_margin="10dp"
+                android:hint="Enter a password"
+                android:layout_below="@+id/reg_fullname"
+                android:inputType="textPassword"/>
+
+            <Button android:id="@+id/regDiet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_below="@id/reg_password"
+                android:layout_margin="10dp"
+                android:text="Are you following any diets?"/>
+
+            <Button android:id="@+id/regIntolerances"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/regDiet"
+                android:singleLine="true"
+                android:layout_margin="10dp"
+                android:text="Do you have any Allergies?"/>
+
+
+            <Button android:id="@+id/regAllergies"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_margin="10dp"
+                android:text="Do you have any Intolerances?"
+                android:layout_below="@+id/regIntolerances"/>
+
+            <!-- Register Button -->
+            <Button android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/regAllergies"
+                android:text="Create Account"/>
+
+    </RelativeLayout>

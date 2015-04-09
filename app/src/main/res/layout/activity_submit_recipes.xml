@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lakhvir.theawkwardeater.SubmitRecipesActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/submittedRecipeName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter recipe name"
+            android:layout_margin="10dp"
+            android:singleLine="true"/>
+
+        <EditText android:id="@+id/enteredDescriptionText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submittedRecipeName"
+            android:layout_margin="10dp"
+            android:hint="Enter description"
+            android:singleLine="true"/>
+
+        <EditText android:id="@+id/submittedRecipeIngredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enteredDescriptionText"
+            android:hint="Enter ingredients"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/addNewIngredient"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewIngredients"
+            android:layout_below="@+id/submittedRecipeIngredients" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:id="@+id/addNewIngredient"
+            android:background="@drawable/custom_button"
+            android:layout_alignTop="@+id/submittedRecipeIngredients"
+            android:layout_toEndOf="@+id/submittedRecipeMethod" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:id="@+id/removeNewIngredient"
+            android:background="@drawable/custom_button"
+            android:layout_alignTop="@+id/addNewIngredient"
+            android:layout_toEndOf="@+id/addNewIngredient" />
+
+        <EditText android:id="@+id/submittedRecipeMethod"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewIngredients"
+            android:hint="Enter steps"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/addNewStep"
+            android:singleLine="true"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:id="@+id/addNewStep"
+            android:background="@drawable/custom_button"
+            android:layout_toLeftOf="@+id/removeNewStep"
+            android:layout_below="@+id/textViewIngredients"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:id="@+id/removeNewStep"
+            android:background="@drawable/custom_button"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewIngredients"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSteps"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/submittedRecipeMethod"
+            />
+
+        <Button android:id="@+id/newRecipeDiets"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/green_custom_button"
+            android:text="Does this recipe have any diets?"
+            android:layout_below="@id/textViewSteps"/>
+
+        <Button android:id="@+id/newRecipeIntolerances"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="5dp"
+            android:text="Does this recipe have any allergies?"
+            android:background="@drawable/green_custom_button"
+            android:layout_below="@id/newRecipeDiets"/>
+
+        <Button android:id="@+id/newRecipeAllergies"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/green_custom_button"
+            android:text="Does this recipe have any intolerances?"
+            android:layout_below="@id/newRecipeIntolerances"/>
+
+        <Button
+            android:id="@+id/sendRecipe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_custom_button"
+            android:layout_below="@+id/newRecipeAllergies"
+            android:text="Submit recipe"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/startCam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_custom_button"
+            android:text="Add a photo"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/sendRecipe"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

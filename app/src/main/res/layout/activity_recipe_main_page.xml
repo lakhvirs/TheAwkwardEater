@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/showRecipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:text="Name"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:id="@+id/showRecipeImage"
+            android:layout_below="@+id/showRecipeName"/>
+
+        <TextView
+            android:id="@+id/descriptionHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe Description:"
+            android:textStyle="bold"
+            android:layout_below="@+id/showRecipeImage"/>
+
+        <TextView
+            android:id="@+id/showrecipeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionHeading"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/ingredientsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Recipe ingredients:"
+            android:layout_below="@+id/showrecipeDescription"/>
+
+        <TextView
+            android:id="@+id/showRecipeIngredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredientsHeading"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/avgRatingHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Recipe average rating"
+            android:layout_below="@+id/showRecipeIngredients"/>
+
+        <RatingBar
+            android:id="@+id/recipeAverageRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avgRatingHeading"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:layout_margin="5dp"
+            android:visibility="gone"/>
+
+        <include
+            layout="@layout/review_list_item"
+            android:id="@+id/review1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipeAverageRating"
+            android:visibility="gone"/>
+
+        <include
+            layout="@layout/review_list_item"
+            android:id="@+id/review2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review1"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <include
+            layout="@layout/review_list_item"
+            android:id="@+id/review3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review2"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/moreReviews"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="See all reviews"
+            android:layout_margin="10dp"
+            android:background="@drawable/green_custom_button"
+            android:layout_below="@+id/review3"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/submitReview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_custom_button"
+            android:text="Submit a review"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/moreReviews"/>
+
+        <Button
+            android:id="@+id/getCooking"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_custom_button"
+            android:text="Start cooking"
+            android:layout_margin="10dp"
+            android:layout_below="@id/submitReview"/>
+
+    </RelativeLayout>
+
+</ScrollView>

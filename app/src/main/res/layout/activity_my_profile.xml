@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lakhvir.theawkwardeater.MyProfileActivity">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAllergies"
+        android:text="Alter My Intolerances"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_custom_button"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editIntolerances"
+        android:text="Alter My Allergies"
+        android:layout_below="@+id/editAllergies"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_custom_button"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDiets"
+        android:text="Alter My Diets"
+        android:layout_below="@+id/editIntolerances"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_custom_button"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/changePassword"
+        android:text="Change My Password "
+        android:layout_below="@+id/editDiets"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_custom_button"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetAccount"
+        android:text="Reset My Account"
+        android:layout_below="@+id/changePassword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_custom_button"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

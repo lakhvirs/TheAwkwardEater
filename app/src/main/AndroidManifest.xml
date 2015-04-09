@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lakhvir.theawkwardeater" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".SearchRecipesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:label="Search for recipes">
+        </activity>
+        <activity android:name=".FactFileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".SubmitRecipesActivity"
+            android:screenOrientation="portrait"
+            android:label="Submit a recipe">
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register a new account"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".IntoleranceFactFile"
+            android:label="@string/title_activity_intolerance_fact_file"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AllergyFactFile"
+            android:label="@string/title_activity_allergy_fact_file"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DietFactFile"
+            android:label="@string/title_activity_diet_fact_file"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecipeMainPage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SubmitReviewActivity"
+            android:label="@string/title_activity_submit_review"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GetCookingActivity"
+            android:label="@string/title_activity_get_cooking"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyProfileActivity"
+            android:label="Make changes to your profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ScreenSlideActivity"
+            android:label="@string/title_activity_screen_slide"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name=".AllReviewsActivity"
+            android:label="@string/title_activity_all_reviews"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView5stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bar5stars"
+        android:layout_marginTop="-3dp"
+        android:text="5 stars" />
+
+    <View
+        android:id="@+id/bar5stars"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/color5stars" />
+
+    <TextView
+        android:id="@+id/textView5starsCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5stars"
+        android:layout_toRightOf="@+id/bar5stars"
+        android:layout_marginLeft="-47dp" />
+
+    <TextView
+        android:id="@+id/textView4stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bar4stars"
+        android:layout_marginTop="-3dp"
+        android:text="4 stars" />
+
+    <View
+        android:id="@+id/bar4stars"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/bar5stars"
+        android:background="@color/color4stars" />
+
+    <TextView
+        android:id="@+id/textView4starsCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4stars"
+        android:layout_toRightOf="@+id/bar4stars"
+        android:layout_marginLeft="-47dp" />
+
+    <TextView
+        android:id="@+id/textView3stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bar3stars"
+        android:layout_marginTop="-3dp"
+        android:text="3 stars" />
+
+    <View
+        android:id="@+id/bar3stars"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/bar4stars"
+        android:background="@color/color3stars" />
+
+    <TextView
+        android:id="@+id/textView3starsCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3stars"
+        android:layout_toRightOf="@+id/bar3stars"
+        android:layout_marginLeft="-47dp" />
+
+    <TextView
+        android:id="@+id/textView2stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bar2stars"
+        android:layout_marginTop="-3dp"
+        android:text="2 stars" />
+
+    <View
+        android:id="@+id/bar2stars"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/bar3stars"
+        android:background="@color/color2stars" />
+
+    <TextView
+        android:id="@+id/textView2starsCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2stars"
+        android:layout_toRightOf="@+id/bar2stars"
+        android:layout_marginLeft="-47dp" />
+
+    <TextView
+        android:id="@+id/textView1stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bar1stars"
+        android:layout_marginTop="-3dp"
+        android:text="1 stars" />
+
+    <View
+        android:id="@+id/bar1stars"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/bar2stars"
+        android:background="@color/color1stars" />
+
+    <TextView
+        android:id="@+id/textView1starsCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1stars"
+        android:layout_toRightOf="@+id/bar1stars"
+        android:layout_marginLeft="-47dp" />
+
+</RelativeLayout>
